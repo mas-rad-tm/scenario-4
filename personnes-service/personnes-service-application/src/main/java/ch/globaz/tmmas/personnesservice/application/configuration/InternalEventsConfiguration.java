@@ -13,27 +13,6 @@ import org.springframework.core.task.SimpleAsyncTaskExecutor;
 @Configuration
 public class InternalEventsConfiguration {
 
-
-	@Bean(name = "applicationEventMulticaster")
-    public ApplicationEventMulticaster simpleApplicationEventMulticaster() {
-		SimpleApplicationEventMulticaster eventMulticaster
-				= new SimpleApplicationEventMulticaster();
-
-		SimpleAsyncTaskExecutor executor = new SimpleAsyncTaskExecutor();
-		executor.setTaskDecorator(new MdcTaskDecorator());
-
-		eventMulticaster.setTaskExecutor(executor);
-		return eventMulticaster;
-	}
-
-	/**@Bean
-	ObjectMapper objectMapper() {
-		final ObjectMapper objectMapper = new ObjectMapper();
-		objectMapper.findAndRegisterModules();
-		objectMapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-		return objectMapper;
-	}
-*/
 	/**
 	 * Client REST pour ElasticSearch haut niveau.
 	 * Voir <a href="https://www.elastic.co/blog/the-elasticsearch-java-high-level-rest-client-is-out">
