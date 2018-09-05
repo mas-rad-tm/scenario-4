@@ -1,5 +1,5 @@
-# Scénario 2
-Gestion des transactions distribuées. 
+# Scénario 4
+Implémentation de fonctionnalité d’indexation « full-text » par service 
 
 Ce scénario se base sur deux services applicatifs: 
 * **rentes-service**: le service de gestion des rentes
