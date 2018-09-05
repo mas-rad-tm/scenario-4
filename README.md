@@ -1,11 +1,11 @@
-# Scénario 2
-Gestion des transactions distribuées. 
+# Scénario 4
+Implémentation de fonctionnalité d’indexation « full-text » par service 
 
 Ce scénario se base sur deux services applicatifs: 
 * **rentes-service**: le service de gestion des rentes
 * **personnes-services**: le service de gestion des personnes
 
-## Variante n° 2
+## Variante n° 1
 ### Prérequis
 * Maven version 3.5.0
 * JDK version 1.8
